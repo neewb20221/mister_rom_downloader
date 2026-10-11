@@ -1,0 +1,50 @@
+# --- Local staging / backups (never publish) ---
+/_deploy_lf/
+/_fresh_ship/
+/_restore_code/
+/catalog_local/
+/meta_local/
+/meta_stubs/
+/magnets/
+/magnets_redump/
+
+# --- User torrent/magnet sources (keep on disk; not in git) ---
+Scripts/.config/mister_rom_downloader/magnets/*
+!Scripts/.config/mister_rom_downloader/magnets/README.md
+Scripts/.config/mister_rom_downloader/torrent_sources.conf
+
+# --- Built metadata / catalog / DAT cache (keep on disk; not in git) ---
+Scripts/.config/mister_rom_downloader/meta/*
+!Scripts/.config/mister_rom_downloader/meta/README.md
+Scripts/.config/mister_rom_downloader/catalog/*
+!Scripts/.config/mister_rom_downloader/catalog/README.md
+Scripts/.config/mister_rom_downloader/dats/*
+!Scripts/.config/mister_rom_downloader/dats/README.md
+
+# --- Runtime queues / downloads / logs ---
+Scripts/.config/mister_rom_downloader/inbox/*
+!Scripts/.config/mister_rom_downloader/inbox/.gitkeep
+Scripts/.config/mister_rom_downloader/selection/*
+!Scripts/.config/mister_rom_downloader/selection/.gitkeep
+Scripts/.config/mister_rom_downloader/dat_sources.conf
+**/ui_stderr.log
+**/*.log
+**/dht.dat
+**/.session*
+**/*.aria2
+**/.space_*
+**/.entry_count
+**/.entry_stamp
+**/*_XXXXXX
+**/.download_*
+**/.partial
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+*.tmp

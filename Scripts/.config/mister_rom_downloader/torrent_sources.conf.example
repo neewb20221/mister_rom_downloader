@@ -1,0 +1,8 @@
+# Example enable flags for files in magnets/
+# Format: basename=0|1
+#
+# Created/updated automatically by the app when you edit torrent sources.
+# Copy to torrent_sources.conf only if you need a hand-made starter file.
+#
+# MyCollection.magnet=1
+# SomeSet.torrent=0
